@@ -1,0 +1,22 @@
+table, tr, td{
+    border: 1px solid #858585;
+    border-collapse: collapse;
+}
+table{
+    margin-top: 30px;
+}
+.first-row{
+    width: 200px;
+}
+.tr{
+    padding: 3px 3px 3px 0px;
+}
+.second-row{
+    padding-left: 5px;
+}
+.nutrition{
+    line-height: 1.5px;
+}
+.second-title{
+    padding-top: 40px;
+}

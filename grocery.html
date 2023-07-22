@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instacart-grocery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="grocery-style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="menu-logo">
+            <input type='checkbox' id='check'>
+            <label for="check"><i class="fa-solid fa-bars" id="menu-bar"></i></label>
+            <!-- Menu bar, fixed -->
+            <nav class="nav" id="nav-bar">
+                <ul>
+                    <div class="btn-sign">
+                        <button>Sign up</button>
+                    </div>
+                    <div class="btn-login">
+                        <button>
+                            <span><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Log in</span>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="menu-items-link">
+                        <li><a href="store.html"></a>
+                            <i class="fa-solid fa-house"></i>&emsp;Stores
+                        </li>
+                        <li><a href="store.html"></a>
+                            <i class="fa-solid fa-gear"></i>&emsp;Your account setting
+                        </li>
+                        <li><a href="store.html"></a>
+                            <img src="https://www.instacart.com/image-server/72x72/www.instacart.com/assets/express/Plum@3x-955a05e4540a840a87dd07ac44c4959671765742927579d90f38abf9e1842ba9.png"
+                                alt="try-instacart" width="20px" height="20px" style="padding-top: 3.2px;">&emsp;Try
+                            instacart+
+                        </li>
+                        <hr>
+                        <ul>
+                            <h2>Credits and promos</h2>
+                            <li><a href="giftcards.html">
+                                <i class="fa-solid fa-gift"></i>&emsp;Buy gift cards
+                            </a>
+                            </li>
+                            <li><a href="store.html"></a>
+                                <i class="fa-solid fa-tag fa-flip-horizontal"></i>&emsp; Credits, promos and gift cards
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h2>Support</h2>
+                            <li><a href="help-center.html">
+                                <i class="fa-solid fa-circle-question"></i>&emsp;Help
+                            </a>
+                            </li>
+                            <li><a href="#"></a>
+                                <i class="fa-solid fa-lightbulb"></i>&emsp;How Instacart works
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h2>Our apps</h2>
+                            <li><a href="#"></a>
+                                <i class="fa-brands fa-apple"></i>&emsp;App Store
+                            </li>
+                            <li><a href="#"></a>
+                                <i class="fa-brands fa-google-play"></i>&emsp;Google Play
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h2>Accessibility</h2>
+                            <li><a href="#"></a>
+                                Enable high contrast colors&emsp;
+                                <i class="fa-solid fa-toggle-on"></i>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="inline-row">
+                            <li><a href="#">Press&nbsp;&nbsp;.</a></li>
+                            <li><a href="#">Jobs&nbsp;&nbsp;.</a></li>
+                            <li><a href="#">Terms&nbsp;&nbsp;.</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+            <img src="https://www.instacart.com/image-server/x36/www.instacart.com/assets/beetstrap/brand/2023/logo@2x-8f1d0b7139d724b69d6563dde696887478257f5f741cfc4da7e2c42b49635bd7.png"
+                alt="instacart-logo" width="120px" height="24px" class="logo-img">
+        </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search products, stores and recepies">
+        </div>
+        <div class="log-cart-loc">
+            <span class="location">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;
+                94105 &nbsp;
+                <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <button class="login">Log in</button>
+            <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>0
+            </span>
+        </div>
+    </div>
+    <!-- grocery items -->
+    <div class="shop-title"><h2
+        style="margin-left: 80px; margin-top: 50px">All stores in San Francisco</h2></div>
+    <div class="shops-by-product">
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/grocery@2x-33cc41f2bbbe1d98838031759f17e5b804fa9f9663d9433445ef82d05ef6e79f.png"
+                alt="grocery" width="72px" height="72px">
+                <figcaption>Grocery</figcaption>
+            </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/alcohol@2x-80e0d6f85575d5aa60a27f3de57b76d3499ee467db20154b9106297abcbf8e88.png"
+                alt="Alcohol" width="72px" height="72px">
+                <figcaption>Alcohol</figcaption>
+            </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/wholesale@2x-c2f068d278c65b42e657a9ff22ff0ad76c7bb9bb7c51749cfe5a2f491786aa12.png"
+                alt="wholesale" width="72px" height="72px">
+                <figcaption>Wholesale</figcaption>
+           </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/convenience@2x-ed68d1e915d22b4c9f677721b2bc1d5105f95cfeea3d616e2988437783cd74bd.png""
+                alt="Convenience" width="72px" height="72px">
+                <figcaption>Convenience</figcaption>
+            </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/pets@2x-24527c28477133644752dab3ad3f82fab8393bbe0ca950486dd69d56e6f3ed84.png"
+                alt="Pets" width="72px" height="72px">
+                <figcaption>Pets</figcaption>
+            </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/beauty@2x-f36ca3f05f9799d78916b23a2a163204e0ace1382616b227b48cbfce5dc2f58b.png"
+                alt="Beauty" width="72px" height="72px">
+                <figcaption>Beauty</figcaption>
+            </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/electronics@2x-0ff008fd7bd8b68426c96d53ebe4f125b37ea8a62f3cf2b7a77da8a6f21123f8.png"
+                alt="Electronics" width="72px" height="72px">
+                <figcaption>Electronics</figcaption>
+            </a>
+        </div>
+        <div class="pro-types">
+            <a href="#">
+                <img src="https://www.instacart.com/assets/home/store_directory_filters/sports_gear@2x-241d75d21834d98b2acb1866d0995a4be62a94f214726bdfc3a36cd48c0ce548.png"
+                alt="sports_gear" width="72px" height="72px">
+                <figcaption>Sports gear</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="feature-button">
+        <div>Fastest</div>
+        <div>In-store prices</div>
+        <div>EBT</div>
+        <div>Pickup</div>
+        <div>New</div>
+    </div>
+    <!-- store names -->
+    <div class="store-names">
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Safeway</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Costo</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Sprouts</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>""
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/31/f889f29f-5d02-4e96-92d2-19c05e886ff6.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Rainbow-Grocery</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/115/9617cce6-ddc3-4f24-a705-d92b7c95e886.jpg"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Miles tone's</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/119/9e38aaa6-e5ae-4be4-a960-0ec79fc8ae9d.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>HMart</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/180/485ab8a3-eadb-480e-9936-ca19c5777f10.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Guss Community Market</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1239/fa662636-8cbe-4625-b4a8-e5a54cc647bc.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Woodlands</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/542/930560f2-a134-496c-a71b-99984d9bfa52.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Lucky Supermarket</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/29/1fbf3168-c654-4f7d-864f-7a615a041346.jpg"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Bi-rite market</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/105/84a0af5d-8d7b-489c-9f78-7bf849dc4217.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Samrt & Final</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1480/f42d3699-108b-4503-8388-8c3948bb05bd.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Indian market & liquor</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/433/c14cc3d8-e6a4-48c0-bcd6-0ecb0951cc39.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Eatly</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/72x/www.instacart.com/assets/domains/warehouse/logo/1319/7c7be631-3981-4982-a43a-218489e2054e.jpg"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Food hall</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+        <div class="names">
+            <div class="img">
+                <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1871/1d8899ef-d619-4f2f-95de-0c94877917fa.png"
+                alt="store" width="68px" height="68px" style="border-radius: 50px;">
+            </div>
+            <div class="sub-list">
+                <h4>Grocery Outlet</h4>
+            <ul>
+                <li>Groceries.</li>
+                <li>Bakery.</li>
+                <li>Deli</li>
+            </ul>
+            <h6 style="color: rgb(10, 173, 10);">Delivery by 6.00pm</h6>
+            <button>Accept EBT</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

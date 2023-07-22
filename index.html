@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>instacart/home</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+
+<body>
+    <!-- sticky & vertical navbar & hamburger menu -->
+    <div class="header">
+        <div class="menu-logo">
+            <input type='checkbox' id='check'>
+            <label for="check"><i class="fa-solid fa-bars" id="menu-bar"></i></label>
+            <!-- Menu bar, fixed -->
+            <nav class="nav" id="nav-bar">
+                <ul>
+                    <div class="btn-sign">
+                        <button>Sign up</button>
+                    </div>
+                    <div class="btn-login">
+                        <button>
+                            <span><i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Log in</span>
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="menu-items-link">
+                        <li><a href="store.html"></a>
+                            <i class="fa-solid fa-house"></i>&emsp;Stores
+                        </li>
+                        <li><a href="store.html"></a>
+                            <i class="fa-solid fa-gear"></i>&emsp;Your account setting
+                        </li>
+                        <li><a href="store.html"></a>
+                            <img src="https://www.instacart.com/image-server/72x72/www.instacart.com/assets/express/Plum@3x-955a05e4540a840a87dd07ac44c4959671765742927579d90f38abf9e1842ba9.png"
+                                alt="try-instacart" width="20px" height="20px" style="padding-top: 3.2px;">&emsp;Try
+                            instacart+
+                        </li>
+                        <hr>
+                        <ul>
+                            <h2>Credits and promos</h2>
+                            <li><a href="giftcards.html">
+                                <i class="fa-solid fa-gift"></i>&emsp;Buy gift cards
+                            </a>
+                            </li>
+                            <li><a href="store.html"></a>
+                                <i class="fa-solid fa-tag fa-flip-horizontal"></i>&emsp; Credits, promos and gift cards
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h2>Support</h2>
+                            <li><a href="help-center.html">
+                                <i class="fa-solid fa-circle-question"></i>&emsp;Help
+                            </a>
+                            </li>
+                            <li><a href="#"></a>
+                                <i class="fa-solid fa-lightbulb"></i>&emsp;How Instacart works
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h2>Our apps</h2>
+                            <li><a href="#"></a>
+                                <i class="fa-brands fa-apple"></i>&emsp;App Store
+                            </li>
+                            <li><a href="#"></a>
+                                <i class="fa-brands fa-google-play"></i>&emsp;Google Play
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <h2>Accessibility</h2>
+                            <li><a href="#"></a>
+                                Enable high contrast colors&emsp;
+                                <i class="fa-solid fa-toggle-on"></i>
+                            </li>
+                        </ul>
+                        <hr>
+                        <ul class="inline-row">
+                            <li><a href="#">Press&nbsp;&nbsp;.</a></li>
+                            <li><a href="#">Jobs&nbsp;&nbsp;.</a></li>
+                            <li><a href="#">Terms&nbsp;&nbsp;.</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+            <img src="https://www.instacart.com/image-server/x36/www.instacart.com/assets/beetstrap/brand/2023/logo@2x-8f1d0b7139d724b69d6563dde696887478257f5f741cfc4da7e2c42b49635bd7.png"
+                alt="instacart-logo" width="120px" height="24px" class="logo-img">
+        </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search products, stores and recepies">
+        </div>
+        <div class="log-cart-loc">
+            <span class="location">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;
+                94105 &nbsp;
+                <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <button class="login">Log in</button>
+            <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>0
+            </span>
+        </div>
+    </div>
+    <!-- div company names & time-->
+    <div class="company">
+        <a href="#">
+            <div class="com-items">
+                <div class="items1">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png" 
+                    alt="sprouts">
+                </div>
+                <figcaption><strong>Sprouts Farmers</strong><br>By 11.15am</figcaption>
+            </div>
+        </a>
+        <a href="#">
+            <div class="com-items">
+                <div class="items2">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/1493/c4c39b30-314c-4705-98b6-b33737eaf9cf.png"
+                    alt="sephora">
+                </div>
+                <figcaption><strong>Sephora </strong><br>By 1.15pm</figcaption>
+            </div>
+        </a>
+        <a href="#">
+            <div class="com-items">
+                <div class="items3">
+                    <img src="https://www.instacart.com/image-server/68x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway">
+                </div>
+                <figcaption><strong>Subway</strong><br>By 1.15am</figcaption>
+            </div>
+        </a>
+        <a href="#">
+            <div class="com-items">
+                <div class="items4">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="costo">
+                </div>
+                <figcaption><strong>Costco</strong><br>By 12.00pm</figcaption>
+            </div>
+        </a>
+        <a href="#">
+            <div class="com-items">
+                <div class="items5">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/31/f889f29f-5d02-4e96-92d2-19c05e886ff6.png"
+                    alt="ranibow-grocery">
+                </div>
+                <figcaption><strong>Rainbow Grocery</strong><br>By 12.00am</figcaption>
+            </div>
+        </a>
+        <a href="#">
+            <div class="com-items">
+                <div class="items6">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/1573/230283d3-fcec-402b-856f-ca0292afddd9.png"
+                    alt="Walgreens">
+                </div>
+                <figcaption><strong>Walgreens</strong><br>1 hr</figcaption>
+            </div>
+        </a>
+        <a href="#">
+            <div class="com-items">
+                <div class="items7">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/648/91ff6462-36cc-480c-85a4-49113667e2ed.png"
+                    alt="target">
+                </div>
+                <figcaption><strong>Target</strong><br>2 hr</figcaption>
+            </div> 
+        </a>
+        <a href="#" id="com-8">
+            <div class="com-items">
+                <div class="items8">
+                    <img src="https://www.instacart.com/image-server/102x/www.instacart.com/assets/domains/warehouse/logo/1487/5ffe3fb7-2a0c-4714-8c71-364d7186a3d3.png"
+                    alt="walmart">
+                </div>
+                <figcaption><strong>Walmart</strong><br>1.5 hr</figcaption>
+            </div>
+        </a> 
+        <a href="#" id="com-9">
+            <div class="com-items">
+                <div class="items9">
+                    <img src="https://www.instacart.com/image-server/136x/www.instacart.com/assets/domains/warehouse/logo/115/9617cce6-ddc3-4f24-a705-d92b7c95e886.jpg"
+                    alt="moleystones">
+                </div>
+                <figcaption><strong>Moley Stone's</strong><br>By 9.45am</figcaption>
+            </div>  
+        </a>
+        <a href="#">
+            <div class="more-stores">
+                <div class="items10">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                    </a>
+                </div>
+                <figcaption><strong>View all</strong><br>92 stores</figcaption>
+            </div>
+        </a>   
+    </div>
+    <!-- product types -->
+    <div class="product-types">
+        <a href="grocery.html" id="first-product">
+            <div><strong>Grocery</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="second-product">
+            <div><strong>EBT</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +45
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="third-product">
+            <div><strong>Alcohol</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Low fees on $10+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="fourth-product">
+            <div><strong>Convenience</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="fifth-product">
+            <div><strong>Deals</strong></div>
+            <div><strong>Updates daily</strong></div>
+        </a>
+        <a href="#" id="sixth-product">
+            <div><strong>Wholesale</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="seventh-product">
+            <div><strong>Pickup</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="eighth-product">
+            <div><strong>Ready meals</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+        <a href="#" id="nineth-product">
+            <div><strong>Beauty</strong></div>
+            <div><strong>By 5.45am</strong></div>
+            <div>Free delivery with Instacart+</div>
+            <ul>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li>
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/5/65f2304b-908e-4cd0-981d-0d4e4effa8de.png"
+                    alt="subway" height="32px" width="32px">
+                </li>
+                <li class="last-list">
+                    <img src="https://www.instacart.com/image-server/48x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png"
+                    alt="subway" height="32px" width="32px">
+                    <div class="sup-count">
+                        +50
+                    </div>
+                </li>
+            </ul>
+        </a>
+    </div>
+    <!-- stores to save for -->
+    <div class="store-title">
+        <h2>Stores to help you save</h2>
+        <a href="#">
+            Show all 
+            &nbsp;<i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+    <div class="stores">
+        <div class="store-items">
+            <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1487/5ffe3fb7-2a0c-4714-8c71-364d7186a3d3.png" 
+            alt="walmart" width="48px" height="48px">
+            <ul>
+                <li><strong>Walmart</strong></li>
+                <li>In-store prices</li>
+            </ul>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="store-items">
+            <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/31/f889f29f-5d02-4e96-92d2-19c05e886ff6.png" 
+            alt="walmart" width="48px" height="48px">
+            <ul>
+                <li><strong>Rainbow Grocery</strong></li>
+                <li>In-store prices</li>
+            </ul>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="store-items">
+            <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1322/2b2234e3-0159-4624-800e-d1c58d5d7991.png" 
+            alt="walmart" width="48px" height="48px">
+            <ul>
+                <li><strong>Staples</strong></li>
+                <li>In-store prices</li>
+            </ul>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="store-items">
+            <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/279/b6a0666c-e18e-4be3-a7a9-22def804a290.png" 
+            alt="walmart" width="48px" height="48px">
+            <ul>
+                <li><strong>Sprouts</strong></li>
+                <li>In-store prices</li>
+            </ul>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="store-items">
+            <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/1573/230283d3-fcec-402b-856f-ca0292afddd9.png" 
+            alt="walmart" width="48px" height="48px">
+            <ul>
+                <li><strong>Walgreens</strong></li>
+                <li>In-store prices</li>
+            </ul>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="store-items">
+            <img src="https://www.instacart.com/image-server/108x/www.instacart.com/assets/domains/warehouse/logo/118/6ede4bd3-cc58-4e32-b10b-24ed1d656131.png" 
+            alt="walmart" width="48px" height="48px">
+            <ul>
+                <li><strong>CVS</strong></li>
+                <li>In-store prices</li>
+            </ul>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.body-senior{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 920px;
+    margin: auto;
+}
+.main-para{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 600px;
+}
+.para-senior{
+    color: rgb(68,68,68);
+    margin-top: 50px;
+}
+.para-senior p{
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+#contact{
+    width: 600px;
+}
+.contact-1 p, .contact-2 p{
+    color: rgb(68,68,68);
+    font-size: 16px;
+}
+#contact .contact-2{
+    margin-left: 70px;
+}
+/* main-list */
+.main-list{
+    margin-top: 50px;
+    padding-top: 10px;
+    line-height: 2; 
+    margin-left: 30px;
+}
+a{
+    text-decoration: none;
+    color: rgb(68,68,68);
+}
+.main-list a:hover{
+    color: #0AAD0A;
+}

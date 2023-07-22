@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Instacart Sans", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.shops-by-product{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 80px; 
+}
+.shops-by-product .pro-types{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 12px 0px 8px;
+    background-color: rgb(247, 245, 240);
+    border-radius: 14px;
+}
+.shops-by-product .pro-types a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 1167px) and (max-width: 1136px) {
+    .shop-title h2, .feature-button{
+        margin-left: 60px;
+    }
+    .product-types{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 460px 460px;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-types a{
+        width: 440px;
+        height: 160px;
+    }
+}
+/* feature button */
+.feature-button{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.feature-button div{
+    padding: 6px;
+    border-radius: 14px;
+    margin-right: 12px;
+    cursor: pointer;
+    background-color: rgb(247, 245, 240);
+}
+/* store names */
+.store-names{
+    display: grid;
+    grid-template-columns: repeat(3,450px);
+    /* grid-template-rows: auto; */
+    overflow-x: hidden;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.store-names .names{
+    background-color: rgb(247, 245, 240);
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+}
+.store-names .names .img{
+    width: 70px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.store-names .names .sub-list{
+    margin-left: 100px;
+    margin-top: -80px;
+    padding: 10px;
+    line-height: 1.5;
+}
+.store-names .names .sub-list ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+.store-names .names .sub-list button{
+    padding: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 12px;
+    border: none;
+}
+@media screen and (max-width: 1167px) and (max-width: 1136px){
+    .store-names{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .store-names .names{
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+    }
+}
